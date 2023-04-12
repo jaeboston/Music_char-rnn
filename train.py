@@ -85,6 +85,8 @@ def train(text, epochs=100, save_freq=10):
             save_weights(epoch + 1, model)
             print('Saved checkpoint to', 'weights.{}.h5'.format(epoch + 1))
 
+# main function to train the model
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train the model on some text.')
     parser.add_argument('--input', default='input.txt', help='name of the text file to train from')
